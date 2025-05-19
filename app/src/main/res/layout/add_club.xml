@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Club Name -->
+        <EditText
+            android:id="@+id/clubName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Club Name"
+            android:inputType="text"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Club Image -->
+        <Button
+            android:id="@+id/uploadClubImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Club Image"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Division Spinner -->
+        <Spinner
+            android:id="@+id/divNameSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Head 1 Name -->
+        <EditText
+            android:id="@+id/head1Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Head 1 Name"
+            android:inputType="text"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Head 1 Image -->
+        <Button
+            android:id="@+id/uploadHead1Image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Head 1 Image"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Head 2 Name -->
+        <EditText
+            android:id="@+id/head2Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Head 2 Name"
+            android:inputType="text"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Head 2 Image -->
+        <Button
+            android:id="@+id/uploadHead2Image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Head 2 Image"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Club Description -->
+        <EditText
+            android:id="@+id/clubDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Club Description"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:minLines="4"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submitClub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Club"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+</ScrollView>

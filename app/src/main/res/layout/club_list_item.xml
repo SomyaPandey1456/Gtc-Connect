@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16sp"
+    android:gravity="center_vertical"
+    android:background="#ffffff"
+    tools:ignore="ExtraText">
+
+    <!-- Club Logo -->
+
+    <!-- Club Name -->
+
+    <ImageView
+        android:id="@+id/clubLogo"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/clubName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14sp"
+        android:layout_marginTop="12sp"
+        android:fontFamily="@font/abhaya_libre_semibold"
+        android:text="Club Name"
+        android:textColor="#0a1f44"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/clubLogo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/abhaya_libre"
+        android:text="Since 2024"
+        android:textColor="#93a3dd"
+        app:layout_constraintStart_toEndOf="@+id/clubLogo"
+        app:layout_constraintTop_toBottomOf="@+id/divisionname" />
+
+    <TextView
+        android:id="@+id/divisionname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/abhaya_libre"
+        android:text="Engineering and Technology"
+        android:textColor="#93a3dd"
+        app:layout_constraintStart_toEndOf="@+id/clubLogo"
+        app:layout_constraintTop_toBottomOf="@+id/clubName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Gtc Connect</string>
+    <string-array name="event_types">
+        <item>Hackathon</item>
+        <item>Ideathon</item>
+        <item>Offline Workshop</item>
+        <item>Online Workshop</item>
+    </string-array>
+</resources>

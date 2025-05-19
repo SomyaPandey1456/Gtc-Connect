@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="#FFFFFF"
+    android:layout_marginBottom="8dp"
+    android:elevation="4dp"
+    android:clipToPadding="false"
+    android:layout_marginHorizontal="8dp"
+    android:radius="8dp">
+
+    <!-- Top Section: Event Logo and Title -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/gtc"
+            android:contentDescription="Event Logo"
+            android:layout_marginEnd="16dp"
+            android:id="@+id/eventLogo" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event Name"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:id="@+id/eventName" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hosted by: "
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#555"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/eventHostingTeam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="XYZ Team"
+                    android:textColor="#555"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Bottom Section: Date and Mode -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date: "
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#555"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/eventDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="17th Dec 2024"
+                android:textColor="#555"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/eventMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="40dp"
+            android:fontFamily="sans-serif-medium"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            android:text="Offline"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F8F8F8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/adminWelcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome, Super Admin"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Add Division Button -->
+        <Button
+            android:id="@+id/addDivisionButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Division"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Add Club Button -->
+        <Button
+            android:id="@+id/addClubButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Club"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Edit Division Button -->
+        <Button
+            android:id="@+id/editDivisionButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Division"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Edit Club Button -->
+        <Button
+            android:id="@+id/editClubButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Club"
+            android:layout_marginBottom="16dp" />
+    </LinearLayout>
+</ScrollView>

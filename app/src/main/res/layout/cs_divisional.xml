@@ -1,0 +1,238 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgpic"
+    android:padding="16dp"
+    android:id="@+id/main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Logo and Title -->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/gtc"
+            android:contentDescription="Logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/alegreya_sc_bold"
+            android:gravity="center"
+            android:text="Divisional Core\nComputer Science"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <!-- President Section -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:layout_width="99dp"
+                android:layout_height="96dp"
+                android:background="@drawable/circle_background"
+                android:contentDescription="GS Image"
+                android:padding="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/supriya" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Supriya Singh"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" General Secretary CS"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <!-- Vice Presidents Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="8dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/rohit"
+                        android:contentDescription="Nishant"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/circle_background"
+                        android:padding="4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rohit RajShekhar"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Joint General Secretary(JGS)"
+                        android:textColor="#CCCCCC"
+                        android:textSize="12sp"
+                        android:gravity="center" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="8dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ishita"
+                        android:contentDescription="Ronak"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/circle_background"
+                        android:padding="4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ishita Verma"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:layout_marginTop="4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Club Secretary (CS)"
+                        android:textColor="#CCCCCC"
+                        android:textSize="12sp"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Row 2: Priyanshu and Aditya -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <!-- Priyanshu Shukla -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/circle_background"
+                        android:contentDescription="Priyanshu"
+                        android:padding="4dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/aditi" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center"
+                        android:text="            Aditi Srivastava           "
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="            Club Incharge(CI)          "
+                        android:textColor="#CCCCCC"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- Aditya Kumar -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/circle_background"
+                        android:contentDescription="Aditya"
+                        android:padding="4dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/utkarsh" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center"
+                        android:text="          Utkarsh          "
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="          Treasurer        "
+                        android:textColor="#CCCCCC"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        </LinearLayout>
+
+</ScrollView>

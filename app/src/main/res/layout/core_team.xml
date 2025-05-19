@@ -1,0 +1,356 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgpic"
+    android:padding="@dimen/_16sdp"
+    android:id="@+id/main">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <!-- Logo and Title -->
+    <ImageView
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:src="@drawable/gtc"
+    android:contentDescription="Logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/alegreya_sc_bold"
+            android:gravity="center"
+            android:text="GALGOTIAS\nTech Council"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_25ssp"
+            android:textStyle="bold" />
+
+    <!-- President Section -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_16sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:src="@drawable/president_image"
+            android:contentDescription="President Image"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_background"
+            android:padding="@dimen/_4sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anirban Sarkar"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_8sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="President"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_14ssp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_4sdp" />
+    </LinearLayout>
+
+    <!-- Vice Presidents Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_16sdp">
+
+        <!-- Row 1: Nishant and Ronak -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <!-- Nishant Bharadwaj -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="@dimen/_8sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:src="@drawable/nishant_image"
+                    android:contentDescription="Nishant"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/circle_background"
+                    android:padding="@dimen/_4sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nishant Bharadwaj"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_14ssp"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_4sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vice-President (AGS)"
+                    android:textColor="#CCCCCC"
+                    android:textSize="@dimen/_12ssp"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Ronak Kumar -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="@dimen/_8sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:src="@drawable/rounak_image"
+                    android:contentDescription="Ronak"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/circle_background"
+                    android:padding="@dimen/_4sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rounak Kumar"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_14ssp"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_4sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vice-President (CI)"
+                    android:textColor="#CCCCCC"
+                    android:textSize="@dimen/_12ssp"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Row 2: Priyanshu and Aditya -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <!-- Priyanshu Shukla -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="@dimen/_8sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:src="@drawable/priyanshu_image"
+                    android:contentDescription="Priyanshu"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/circle_background"
+                    android:padding="@dimen/_4sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Priyanshu Shukla"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_14ssp"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_4sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vice-President (AtCI)"
+                    android:textColor="#CCCCCC"
+                    android:textSize="@dimen/_12ssp"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Aditya Kumar -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="@dimen/_8sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:background="@drawable/circle_background"
+                    android:contentDescription="Aditya"
+                    android:padding="@dimen/_4sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/aditya_image" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aditya Kumar"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_14ssp"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_4sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vice-President (ACI)"
+                    android:textColor="#CCCCCC"
+                    android:textSize="@dimen/_12ssp"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Row 3: Atashi and Lakshat -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <!-- Atashi Mudgal -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="@dimen/_8sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:src="@drawable/atashi_image"
+                    android:contentDescription="Atashi"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/circle_background"
+                    android:padding="@dimen/_4sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Atashi Mudgal"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_14ssp"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_4sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vice-President (JGS)"
+                    android:textColor="#CCCCCC"
+                    android:textSize="@dimen/_12ssp"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <!-- Lakshat Singh -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="@dimen/_8sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:background="@drawable/circle_background"
+                    android:contentDescription="Lakshay"
+                    android:padding="@dimen/_4sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/lakshay_image" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lakshay Singh"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_14ssp"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_4sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vice-President (AJGS)"
+                    android:textColor="#CCCCCC"
+                    android:textSize="@dimen/_12ssp"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Row 4: Jyotiraditya -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <!-- Jyotiraditya Kumar -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="@dimen/_8sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:src="@drawable/jyotiraditya_image"
+                    android:contentDescription="Jyotiraditya"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/circle_background"
+                    android:padding="@dimen/_4sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jyotiraditya Kumar"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_14ssp"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_4sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vice-President (Treasurer)"
+                    android:textColor="#CCCCCC"
+                    android:textSize="@dimen/_12ssp"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

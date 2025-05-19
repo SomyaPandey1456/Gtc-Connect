@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_16sdp">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/clublogo"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/mobile_development_logo"
+            android:contentDescription="Event Logo" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/clubname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="Mobile Development"
+            android:textColor="#000000"
+            android:textSize="@dimen/_24sdp"
+            android:textStyle="bold" />
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:orientation="vertical">
+
+            <!-- Event Name -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Event Name :"
+                    android:textSize="@dimen/_18sdp" />
+
+                <EditText
+                    android:id="@+id/editText_event_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@android:drawable/editbox_background"
+                    android:hint="Enter Event Name" />
+            </LinearLayout>
+
+            <!-- Event Type -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Event Type :"
+                    android:textSize="@dimen/_18sdp" />
+
+                <Spinner
+                    android:id="@+id/spinner_event_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:entries="@array/event_types" />
+            </LinearLayout>
+
+            <!-- Max Participants -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Max Participants :"
+                    android:textSize="@dimen/_18sdp" />
+
+                <EditText
+                    android:id="@+id/editText_max_participants"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@android:drawable/editbox_background"
+                    android:hint="Enter Max Participants"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <!-- Event Date -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Event Date :"
+                    android:textSize="@dimen/_18sdp" />
+
+                <Button
+                    android:id="@+id/editText_event_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@android:drawable/editbox_background"
+                    android:hint="Enter Event Date" />
+            </LinearLayout>
+
+            <!-- Event Timing -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Event Timing :"
+                    android:textSize="@dimen/_18sdp" />
+
+                <EditText
+                    android:id="@+id/editText_event_timing"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@android:drawable/editbox_background"
+                    android:hint="Enter Event Timing" />
+            </LinearLayout>
+
+            <!-- Event Venue -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Event Venue :"
+                    android:textSize="@dimen/_18sdp" />
+
+                <EditText
+                    android:id="@+id/editText_event_venue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@android:drawable/editbox_background"
+                    android:hint="Enter Event Venue" />
+            </LinearLayout>
+
+            <!-- Chief Guest -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Chief Guest :"
+                    android:textSize="@dimen/_18sdp" />
+
+                <EditText
+                    android:id="@+id/editText_chief_guest"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@android:drawable/editbox_background"
+                    android:hint="Enter Chief Guest" />
+            </LinearLayout>
+
+            <!-- Event Description -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Event Description :"
+                    android:textSize="@dimen/_18sdp" />
+
+                <EditText
+                    android:id="@+id/editText_event_description"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@android:drawable/editbox_background"
+                    android:hint="Enter Event Description" />
+            </LinearLayout>
+
+            <!-- Banner of Event -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Banner Of Event :"
+                    android:textSize="@dimen/_18sdp" />
+
+                <Button
+                    android:id="@+id/eventbanner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:background="@android:drawable/editbox_background"
+                    android:hint="Upload Image" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/eventposter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/gtc" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_16sdp">
+
+            <Button
+                android:id="@+id/button_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CANCEL" />
+
+            <Button
+                android:id="@+id/button_add_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ADD EVENT" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

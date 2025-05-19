@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9E7E7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16sp">
+
+        <!-- Heading -->
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PROFILE"
+            android:textSize="26sp"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="16sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <!-- Profile Picture -->
+        <RelativeLayout
+            android:layout_width="140sp"
+            android:layout_height="140sp"
+            android:layout_marginTop="20sp">
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profilepic" />
+        </RelativeLayout>
+
+        <!-- Name and Year -->
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anirban Sarkar"
+            android:textSize="22sp"
+            android:textColor="#000000"
+            android:layout_marginTop="12sp"
+            android:fontFamily="sans-serif-medium" />
+
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2021-2025"
+            android:textSize="18sp"
+            android:textColor="#777777"
+            android:fontFamily="sans-serif" />
+
+        <!-- Details Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_rectangle"
+            android:padding="24sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginHorizontal="16sp"
+            android:outlineAmbientShadowColor="#000000">
+
+            <!-- Admission Number -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Admission Number"
+                    android:textColor="#777777"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif" />
+
+                <TextView
+                    android:id="@+id/admissionNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="23CSE1010306"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:layout_marginStart="14sp" />
+            </LinearLayout>
+
+            <!-- Enrollment Number -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enrollment Number"
+                    android:textColor="#777777"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif" />
+
+                <TextView
+                    android:id="@+id/enrollmentNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="23131011958"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_marginStart="14sp" />
+            </LinearLayout>
+
+            <!-- Course -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Course"
+                    android:textColor="#777777"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif" />
+
+                <TextView
+                    android:id="@+id/course"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BTech, CSE"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_marginStart="14sp" />
+            </LinearLayout>
+
+            <!-- Phone Number -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number"
+                    android:textColor="#777777"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif" />
+
+                <TextView
+                    android:id="@+id/phoneNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8368194042"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_marginStart="14sp" />
+            </LinearLayout>
+
+            <!-- Email -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="#777777"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif" />
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="riotstriker@gmail.com"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_marginStart="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Logout Button -->
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:backgroundTint="#FFFDFE"
+            android:text="Log Out"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/admindashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Admin Dashboard" />
+    </LinearLayout>
+</ScrollView>
